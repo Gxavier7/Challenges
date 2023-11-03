@@ -25,20 +25,120 @@
   box-shadow: 10px 10px 8px #242424 ;
 }
 
+.watch::after{
+  z-index: 5;
+  width: 10px;
+  content: "";
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
 .index{
+  z-index: 0;
   height: 2px;
   width: 300px;
   position: absolute;
   left: calc(50vw - 150px);
-  background-color: #fff;
+  background-color: #000;
 }
 
 .index::after{
   top: -2px;
-  left: 20px;
+  z-index: 1;
+  content: "";
+  height: 5px;
+  width: 20px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.index::before{
+  right: 0;
+  top: -2px;
+  z-index: 1;
   height: 5px;
   content: "";
-  width: 260px;
+  width: 20px;
   position: absolute;
-  background-color: #000000;
+  background-color: #fff;
+}
+
+.first{
+  transform: rotate(30deg);
+}
+
+.second{
+  transform: rotate(60deg);
+}
+
+.third{
+  transform: rotate(90deg);
+}
+
+.fourth{
+  transform: rotate(120deg);
+}
+
+.fifth{
+  transform: rotate(150deg);
+}
+
+.hour{
+  width: 3px;
+  z-index: 0;
+  height: 100px;
+  transform: rotateZ(30deg);
+  background-color: transparent;
+}
+
+.hour::after{
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  z-index: 5;
+  content: "";
+  height: 50px;
+  position: absolute;
+  background-color: #616161;
+}
+
+.minutes{
+  width: 3px;
+  z-index: 0;
+  height: 200px;
+  position: absolute;
+  transform: rotateZ(30deg);
+  background-color: transparent;
+}
+
+.minutes::after{
+  top: -1px;
+  z-index: 4;
+  left: -1px;
+  width: 5px;
+  content: "";
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.seconds{
+  z-index: 0;
+  height: 2px;
+  width: 200px;
+  position: absolute;
+  transform: rotateZ(30deg);
+  background-color: transparent;
+}
+
+.seconds::after{
+  top: -1px;
+  z-index: 3;
+  left: -1px;
+  content: "";
+  height: 4px;
+  width: 100px;
+  position: absolute;
+  background-color: red;
 }
