@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="form">
+      
+      <h1 class="title">
+        Form Validation
+      </h1>
+
+      <div class="input">
+        <label for="name">Nome</label>
+        <input type="text" placeholder="José" id="name" name="form">
+      </div>
+
+      <div class="input">
+        <label for="mail">E-mail</label>
+        <input type="email" placeholder="email@gmail.com" id="mail" name="form">
+      </div>
+
+      <div class="input">
+        <label for="bornDate">Nome</label>
+        <input type="date" placeholder="José" id="bornDate" name="form">
+      </div>
+
+      <div class="radioContainer">
+        <h3 class="titleGender">Gênero</h3>
+
+        <div class="radioInput">
+          <input type="radio" id="Female" name="form" class="radio" >
+          <label for="Female">Female</label>
+        </div>
+
+        <div class="radioInput" >
+          <input type="radio" id="Male" name="form" class="radio" >
+          <label for="Male">Male</label>
+        </div>
+
+        <div class="radioInput">
+          <input type="radio" id="Other" name="form" class="radio" >
+          <label for="Other">Other</label>
+        </div>
+      </div>
+
+      <button type="submit" name="form" class="button" onclick="validation()">Validar</button>
+    </section>
+  </main>
+
+</body>
+</html>
