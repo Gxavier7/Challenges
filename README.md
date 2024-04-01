@@ -5,7 +5,7 @@ Day 2 - Calculator
 Day 3 - Tic-tac-toe
 Day 4 - BackgroundChanger
 Day 5 - Form Validation
-Day 6 - 
+Day 6 - Counter
 Day 7 - 
 Day 8 - 
 Day 9 - 

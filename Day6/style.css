@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header{
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(138, 138, 138, 0.418);
+}
+
+.container{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#counter{
+  padding: 1rem;
+  font-size: 7rem;
+}
+
+.actions{
+  gap: .5rem;
+  display: flex;
+}
+
+button{
+  cursor: pointer;
+  padding: .25rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.increase{
+  border: 2px solid blue;
+}
